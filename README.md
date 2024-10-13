@@ -53,11 +53,11 @@ To download the app, please fill out the following form:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/username/rubbish-runner.git
+   git clone https://github.com/kimimhdzr/404-Brain-Not-Found-Hackhaton-X.git
 
 2. Navigate into the project directory:
 ```bash
-   cd rubbish-runner
+   cd 404-Brain-Not-Found
 ```
 3. Open the project in Android Studio (for Android) or your Flutter IDE.
 
