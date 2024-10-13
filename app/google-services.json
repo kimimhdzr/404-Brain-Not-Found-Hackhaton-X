@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1088765266516",
+    "project_id": "brainnotfound404-hackathonx",
+    "storage_bucket": "brainnotfound404-hackathonx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088765266516:android:b7b7ab6b0570fc82abbbc1",
+        "android_client_info": {
+          "package_name": "com.example.hackathon_x"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAMmoK-7wk0Ko95T5t40o4kc1yGNdOskU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
