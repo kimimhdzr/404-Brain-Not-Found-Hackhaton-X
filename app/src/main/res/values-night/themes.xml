@@ -2,6 +2,47 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.HackathonX" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">#1E90FF</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="colorPrimaryContainer">#1A1E90FF</item>
+
+        <item name="colorSecondary">#4CAF50</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <item name="colorSecondaryContainer">#1A4CAF50</item>
+
+        <item name="colorTertiary">#FF9800</item>
+        <item name="colorOnTertiary">#121212</item>
+
+        <item name="android:background">#121212</item>
+        <item name="backgroundColor">#121212</item>
+        <item name="colorOnBackground">#E0E0E0</item>
+
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">#E0E0E0</item>
+
+        <item name="subtitleTextColor">#B0B0B0</item>
+
+        <!--bottom nav -->
+        <item name="bottomNavigationStyle">@style/BottomNavStyleDark</item>
+
+
+        <item name="colorError">#CF6679</item> <!-- Error color for dark theme (red) -->
+        <item name="colorOnError">#000000</item> <!-- Black text/icons on error color -->
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>-->
     </style>
+
+
+    <style name="BottomNavStyleDark">
+        <item name="itemIconTint">@color/bottom_nav_item_selector_dark</item>
+        <item name="itemTextColor">@color/bottom_nav_item_selector_dark</item>
+    </style>
+
+
+
+
 </resources>

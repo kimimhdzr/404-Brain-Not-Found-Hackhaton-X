@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/sheetholder"
+        android:layout_width="170dp"
+        android:layout_height="7dp"
+        android:background="@drawable/sheetholderbg"
+        android:backgroundTint="?attr/colorSecondaryContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Filter Mentors"
+        android:textColor="?attr/colorSecondary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sheetholder" />
+
+    <TextView
+        android:id="@+id/locationheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Location"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainheader" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/locationchipground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/locationheader"
+        app:layout_constraintTop_toBottomOf="@id/locationheader">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/loc1"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Skill 1"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/loc2"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Skill 2"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/loc3"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Skill 3"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+    <TextView
+        android:id="@+id/yoenheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Years Of Experience"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/locationchipground" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/yoechipground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/locationheader"
+        app:layout_constraintTop_toBottomOf="@id/yoenheader">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/loc1"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Skill 1"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/loc2"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Skill 2"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/loc3"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Skill 3"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/industryheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Industry"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yoechipground" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/industrychipground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/locationheader"
+        app:layout_constraintTop_toBottomOf="@id/industryheader">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/loc1"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Skill 1"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/loc2"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Skill 2"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/loc3"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Skill 3"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/levelheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Job Level"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/industrychipground" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/levelchipground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/locationheader"
+        app:layout_constraintTop_toBottomOf="@id/levelheader">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/intership"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Internship"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/intership"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Entry-Level"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/loc3"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Junior"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:closeIconEnabled="false" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/ratingnheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Rating"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/levelchipground" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/ratingchipground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/locationheader"
+        app:layout_constraintTop_toBottomOf="@id/ratingnheader">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/rating5"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="5"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:chipIcon="@drawable/baseline_star_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="?attr/colorPrimary" />
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/rating4"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="4"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:chipIcon="@drawable/baseline_star_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="?attr/colorPrimary" />
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/rating3"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="3"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:chipIcon="@drawable/baseline_star_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="?attr/colorPrimary" />
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/rating2"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="2"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:chipIcon="@drawable/baseline_star_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="?attr/colorPrimary" />
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/rating1"
+            style="@style/CustomChipStylePrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="1"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:chipIcon="@drawable/baseline_star_24"
+            app:chipIconEnabled="true"
+            app:chipIconTint="?attr/colorPrimary" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratingchipground">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/resetbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorSecondaryContainer"
+            android:clickable="true"
+            android:paddingHorizontal="40dp"
+            android:text="Reset"
+            android:textColor="?attr/colorOnBackground"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/applybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:background="?attr/colorSecondary"
+            android:clickable="true"
+            android:paddingHorizontal="50dp"
+            android:text="Apply"
+            android:textColor="?attr/backgroundColor"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mentorcard"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:backgroundTint="?attr/colorSurface"
+    android:clickable="true"
+    android:focusable="true"
+    android:stateListAnimator="@animator/card_press_state_animator"
+    app:cardCornerRadius="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="?attr/colorPrimaryContainer"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Roundedless" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:chipSpacingHorizontal="0dp"
+            app:chipSpacingVertical="-10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/profile_image"
+            app:layout_constraintStart_toStartOf="@id/profile_image"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/mentorstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/jobposition"
+            app:layout_constraintTop_toBottomOf="@id/jobposition" />
+
+        <TextView
+            android:id="@+id/jobloc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" · Shah Alam, Selangor, Malaysia"
+            android:textColor="?attr/subtitleTextColor"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@id/mentorname"
+            app:layout_constraintStart_toEndOf="@id/mentorstatus"
+            app:layout_constraintTop_toBottomOf="@id/jobposition" />
+
+        <TextView
+            android:id="@+id/mentorname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="2dp"
+            android:text="Hakimi Mahadzir"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toTopOf="@id/profile_image" />
+
+        <TextView
+            android:id="@+id/jobposition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text="Senior Software Engineer"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/mentorname"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toBottomOf="@id/mentorname" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="40dp"
+            app:chipSpacingHorizontal="5dp"
+            app:chipSpacingVertical="-10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/mentorname"
+            app:layout_constraintStart_toStartOf="@id/jobposition"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+        <TextView
+            android:id="@+id/jobdesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="3"
+            android:text="Looking for someone that are passionate and interest in building a professional career in IT industry especially software development"
+            android:textColor="?attr/subtitleTextColor"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/mentorname"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toBottomOf="@id/jobloc" />
+
+        <TextView
+            android:id="@+id/divider"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintStart_toStartOf="@id/profile_image"
+            app:layout_constraintEnd_toEndOf="@id/mentorname"
+            app:layout_constraintTop_toBottomOf="@id/jobdesc"
+            android:layout_width="0dp"
+            android:backgroundTint="?attr/colorSecondaryContainer"
+            android:layout_height="4dp"
+            android:background="@drawable/toolbarbg"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

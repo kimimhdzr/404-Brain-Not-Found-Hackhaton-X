@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/languagecard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:strokeWidth="0dp"
+    android:stateListAnimator="@animator/card_press_state_animator"
+    app:cardCornerRadius="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/languageName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/languageName">
+
+            <TextView
+                android:id="@+id/languageCert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Band 5 MUET"
+                android:textColor="?attr/subtitleTextColor"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/languageLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professional Working Level"
+                android:textColor="?attr/subtitleTextColor"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@id/companyName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/divider1" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

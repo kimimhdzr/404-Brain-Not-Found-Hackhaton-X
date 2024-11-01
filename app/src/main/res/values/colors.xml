@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <!-- Colors used for light mode -->
+    <color name="bottomNavBackgroundLight">#FFFFFF</color>
+    <color name="bottomNavItemActiveLight">#007BFF</color>
+    <color name="bottomNavItemInactiveLight">#808080</color>
+
+
+    <!-- Colors used for dark mode -->
+    <color name="bottomNavBackgroundDark">#121212</color>
+    <color name="bottomNavItemActiveDark">#1E90FF</color>
+    <color name="bottomNavItemInactiveDark">#808080</color>
 </resources>

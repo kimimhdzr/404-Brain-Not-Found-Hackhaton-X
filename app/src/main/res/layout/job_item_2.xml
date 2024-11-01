@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/jobcard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:backgroundTint="?attr/colorSurface"
+    android:clickable="true"
+    android:focusable="true"
+    android:stateListAnimator="@animator/card_press_state_animator"
+    app:cardCornerRadius="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="?attr/colorSecondaryContainer"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Roundedless" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_jobtype"
+            style="@style/CustomChipStyleSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:clickable="false"
+            android:text="Full-time"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:closeIconEnabled="false"
+            app:layout_constraintEnd_toEndOf="@id/profile_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_image" />
+
+        <TextView
+            android:id="@+id/posteddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Posted · 1 week ago"
+            android:textColor="?attr/subtitleTextColor"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/companyname"
+            app:layout_constraintTop_toBottomOf="@id/companyname"/>
+
+
+        <TextView
+            android:id="@+id/jobloc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Shah Alam, Selangor, Malaysia"
+            android:textColor="?attr/subtitleTextColor"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/posteddate"
+            app:layout_constraintStart_toEndOf="@id/posteddate"/>
+
+        <TextView
+            android:id="@+id/jobname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Software Engineer"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toTopOf="@id/profile_image" />
+
+        <TextView
+            android:id="@+id/companyname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="KimiDevTech"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toBottomOf="@id/jobname" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/companyname"
+            app:layout_constraintTop_toBottomOf="@id/companyname">
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+        <TextView
+            android:id="@+id/jobdesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="4"
+            android:text="Able to work under monitoring and independently"
+            android:textColor="?attr/subtitleTextColor"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toBottomOf="@id/jobloc" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/jobdesc"
+            app:layout_constraintTop_toBottomOf="@id/jobdesc">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_jobsalary"
+                style="@style/CustomChipStyleSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:clickable="false"
+                android:text="RM 2,000 - RM RM3,000 a month"
+                android:textColor="?attr/colorOnBackground"
+                android:textSize="12sp"
+                app:closeIconEnabled="false" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

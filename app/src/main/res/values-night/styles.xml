@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><!-- In res/values/styles.xml -->
+<resources>
+
+    <style name="ShapeAppearance.Circular">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearance.Rounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
+
+    <style name="ShapeAppearance.Roundedless">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+
+    <style name="ShapeAppearance.BottomRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">30%</item>
+        <item name="cornerSizeBottomRight">30%</item>
+    </style>
+
+    <style name="ShapeAppearance">ShapeAppearance</style>
+
+    <style name="CustomChipStylePrimary" parent="Widget.MaterialComponents.Chip.Choice">
+        <!-- Background color of the chip -->
+        <item name="chipBackgroundColor">?attr/colorPrimaryContainer</item>colorPrimary
+        <item name="chipStrokeColor">?attr/colorPrimary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">2dp</item>
+
+        <!-- Text color inside the chip -->
+        <!--        <item name="chip">?attr/colorPrimaryContainer</item>-->
+        <!-- Chip icon color (if you use icons) -->
+        <!--        <item name="chipIconTint">@color/custom_chip_icon_tint</item>-->
+        <!-- Ripple color when the chip is clicked -->
+        <item name="rippleColor">?attr/colorPrimary</item>
+        <!-- Elevation of the chip (optional) -->
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="CustomChipStyleSecondary" parent="Widget.MaterialComponents.Chip.Choice">
+        <!-- Background color of the chip -->
+        <item name="chipBackgroundColor">?attr/colorSecondaryContainer</item>
+        <item name="chipStrokeColor">?attr/colorSecondary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">2dp</item>
+        <!-- Text color inside the chip -->
+        <!--        <item name="chipTextColor">@color/custom_chip_text_color</item>-->
+        <!-- Chip icon color (if you use icons) -->
+        <!--        <item name="chipIconTint">@color/custom_chip_icon_tint</item>-->
+        <!-- Ripple color when the chip is clicked -->
+        <item name="rippleColor">?attr/colorSecondary</item>
+        <!-- Elevation of the chip (optional) -->
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="CustomRangeSlider" parent="Widget.MaterialComponents.Slider">
+        <item name="trackColorInactive">#E0E0E0</item>
+        <item name="trackColorActive">#4CAF50</item>
+        <item name="thumbColor">#4CAF50</item>
+        <item name="haloColor">#80CBC4</item>
+        <item name="thumbRadius">10dp</item>
+        <item name="trackHeight">6dp</item>
+    </style>
+
+
+</resources>

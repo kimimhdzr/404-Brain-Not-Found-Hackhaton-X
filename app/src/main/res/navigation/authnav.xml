@@ -1,6 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/authnav">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_auth"
+    app:startDestination="@id/signin">
 
+    <fragment
+        android:id="@+id/signin"
+        android:name="com.example.hackathon_x.Auth.Fragments.SignIn"
+        android:label="SignIn"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/nav_to_forgotpassword"
+            app:destination="@id/forgotpassword" />
+        <action
+            android:id="@+id/nav_to_selectinterest"
+            app:destination="@id/selectinterest" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotpassword"
+        android:name="com.example.hackathon_x.Auth.Fragments.ForgotPassword"
+        android:label="ForgotPassword"
+        tools:layout="@layout/fragment_forgot_password">
+        <action
+            android:id="@+id/nav_to_signin"
+            app:destination="@id/signin" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectinterest"
+        android:name="com.example.hackathon_x.Auth.Fragments.PreferenceIndustry"
+        android:label="Select Interest 1"
+        tools:layout="@layout/fragment_select_interest">
+        <action
+            android:id="@+id/nav_to_preferencelocationlevelsalary"
+            app:destination="@id/preferencelocationlevelsalary" />
+    </fragment>
+    <fragment
+        android:id="@+id/preferencelocationlevelsalary"
+        android:name="com.example.hackathon_x.Auth.Fragments.PreferenceLocationLevelSalary"
+        android:label="Select Interest 2"
+        tools:layout="@layout/fragment_preference_location_level_salary">
+        <action
+            android:id="@+id/nav_to_signup"
+            app:destination="@id/signup" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signup"
+        android:name="com.example.hackathon_x.Auth.Fragments.SignUp"
+        android:label="SignUp"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/nav_to_signin"
+            app:destination="@id/signin" />
+    </fragment>
 </navigation>

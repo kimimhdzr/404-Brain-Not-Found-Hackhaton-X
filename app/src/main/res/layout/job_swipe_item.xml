@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?><!-- res/layout/item_job_card.xml -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/jobcard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:elevation="5dp"
+    android:focusable="true"
+    android:stateListAnimator="@animator/card_press_state_animator"
+    app:cardBackgroundColor="?attr/colorSurface"
+    app:cardCornerRadius="20dp"
+    app:strokeColor="?attr/colorPrimaryContainer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="50dp">
+
+        <ImageView
+            android:id="@+id/companyLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?attr/colorPrimaryContainer"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Kimi Dev Sdn.Bhd"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/companyIndustry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/companyLogo"
+            app:layout_constraintTop_toTopOf="@id/companyLogo" />
+
+        <TextView
+            android:id="@+id/companyIndustry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="IT Company"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/companyLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/companyName"
+            app:layout_constraintTop_toBottomOf="@id/companyName" />
+
+        <TextView
+            android:id="@+id/jobTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Job Position"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/companyLogo" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/jobdetail1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/jobTitle"
+            app:layout_constraintTop_toBottomOf="@id/jobTitle">
+
+            <TextView
+                android:id="@+id/companyLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Federal Territory of Kuala Lumpur, Malaysia"
+                android:textColor="?attr/subtitleTextColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/connector1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" · "
+                android:textColor="?attr/subtitleTextColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/postedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 week ago"
+                android:textColor="?attr/subtitleTextColor"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/connector2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" · "
+                android:textColor="?attr/subtitleTextColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/numberApplicants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16 applicants"
+                android:textColor="?attr/subtitleTextColor"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/jobdetail1">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/jobtype1"
+                style="@style/CustomChipStylePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:clickable="false"
+                android:text="Hybrid"
+                android:textColor="?attr/colorOnBackground"
+                android:textSize="13sp"
+                app:chipBackgroundColor="@android:color/transparent"
+                app:chipIcon="@drawable/baseline_star_border_24"
+                app:chipIconEnabled="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/jobtype2"
+                style="@style/CustomChipStylePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:clickable="false"
+                android:text="Full-time"
+                android:textColor="?attr/colorOnBackground"
+                android:textSize="13sp"
+                app:chipBackgroundColor="@android:color/transparent"
+                app:chipIcon="@drawable/baseline_star_border_24"
+                app:chipIconEnabled="true" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/jobDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/job_desc"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chipGroup1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

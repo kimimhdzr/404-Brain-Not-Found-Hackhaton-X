@@ -1,6 +1,360 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mainnav">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainnav"
+    app:startDestination="@id/home">
 
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.hackathon_x.Main.Home.Home"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/nav_to_job"
+            app:destination="@id/job" />
+        <action
+            android:id="@+id/nav_to_upskills"
+            app:destination="@id/upskills" />
+        <action
+            android:id="@+id/nav_to_mentorship"
+            app:destination="@id/mentorship" />
+        <action
+            android:id="@+id/nav_to_profile"
+            app:destination="@id/profile" />
+        <!--fragments-->
+        <action
+            android:id="@+id/nav_to_notification"
+            app:destination="@id/notification" />
+
+        <action
+            android:id="@+id/nav_to_mentorprofile"
+            app:destination="@id/mentorprofile" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/job"
+        android:name="com.example.hackathon_x.Main.Job.Job"
+        android:label="Job"
+        tools:layout="@layout/fragment_job">
+        <action
+            android:id="@+id/nav_to_upskills"
+            app:destination="@id/upskills" />
+        <action
+            android:id="@+id/nav_to_mentorship"
+            app:destination="@id/mentorship" />
+        <action
+            android:id="@+id/nav_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/nav_to_home"
+            app:destination="@id/home" />
+        <!--fragments-->
+        <action
+            android:id="@+id/nav_to_jobsearch"
+            app:destination="@id/jobsearch" />
+        <action
+            android:id="@+id/nav_to_savedjob"
+            app:destination="@id/savedjob" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobsearch"
+        android:name="com.example.hackathon_x.Main.Job.Fragments.JobSearch"
+        android:label="JobSearch"
+        tools:layout="@layout/fragment_job_search">
+
+        <action
+            android:id="@+id/nav_to_job"
+            app:destination="@id/job" />
+        <action
+            android:id="@+id/nav_to_savedjob"
+            app:destination="@id/savedjob" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/savedjob"
+        android:name="com.example.hackathon_x.Main.Job.Fragments.SavedJobs"
+        android:label="SavedJobs"
+        tools:layout="@layout/fragment_saved_jobs">
+        <action
+            android:id="@+id/nav_to_job"
+            app:destination="@id/job" />
+        <action
+            android:id="@+id/nav_to_jobsearch"
+            app:destination="@id/jobsearch" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/upskills"
+        android:name="com.example.hackathon_x.Main.Upskills.LearningUpskills"
+        android:label="Upskilss"
+        tools:layout="@layout/fragment_learning_upskills">
+        <action
+            android:id="@+id/nav_to_job"
+            app:destination="@id/job" />
+        <action
+            android:id="@+id/nav_to_mentorship"
+            app:destination="@id/mentorship" />
+        <action
+            android:id="@+id/nav_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/nav_to_home"
+            app:destination="@id/home" />
+        <!--fragments-->
+        <action
+            android:id="@+id/nav_to_savedwebinar"
+            app:destination="@id/savedwebinar" />
+        <action
+            android:id="@+id/nav_to_webinarsearch"
+            app:destination="@id/webinarsearch" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/savedwebinar"
+        android:name="com.example.hackathon_x.Main.Upskills.Fragments.SavedWebinar"
+        android:label="SavedWebinar"
+        tools:layout="@layout/fragment_saved_webinar">
+        <action
+            android:id="@+id/nav_to_upskills"
+            app:destination="@id/upskills" />
+        <action
+            android:id="@+id/nav_to_webinarsearch"
+            app:destination="@id/webinarsearch" />
+    </fragment>
+    <fragment
+        android:id="@+id/webinarsearch"
+        android:name="com.example.hackathon_x.Main.Upskills.Fragments.WebinarSearch"
+        android:label="WebinarSearch"
+        tools:layout="@layout/fragment_webinar_search">
+        <action
+            android:id="@+id/nav_to_upskills"
+            app:destination="@id/upskills" />
+        <action
+            android:id="@+id/nav_to_savedwebinar"
+            app:destination="@id/savedwebinar" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/mentorship"
+        android:name="com.example.hackathon_x.Main.Mentorship.MentorshipAndNetworking"
+        android:label="Mentorship"
+        tools:layout="@layout/fragment_mentorship_and_networking">
+        <action
+            android:id="@+id/nav_to_job"
+            app:destination="@id/job" />
+        <action
+            android:id="@+id/nav_to_upskills"
+            app:destination="@id/upskills" />
+        <action
+            android:id="@+id/nav_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/nav_to_home"
+            app:destination="@id/home" />
+        <!--fragments-->
+        <action
+            android:id="@+id/nav_to_mentorsearch"
+            app:destination="@id/mentorsearch" />
+        <action
+            android:id="@+id/nav_to_savedmentor"
+            app:destination="@id/savedmentor" />
+        <action
+            android:id="@+id/nav_to_notification"
+            app:destination="@id/notification" />
+
+
+        <action
+            android:id="@+id/nav_to_mentorprofile"
+            app:destination="@id/mentorprofile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/mentorsearch"
+        android:name="com.example.hackathon_x.Main.Mentorship.Fragments.MentorSearch"
+        android:label="MentorsSearch"
+        tools:layout="@layout/fragment_mentor_search">
+        <action
+            android:id="@+id/nav_to_mentorship"
+            app:destination="@id/mentorship" />
+        <action
+            android:id="@+id/nav_to_savedmentor"
+            app:destination="@id/savedmentor" />
+        <action
+            android:id="@+id/nav_to_mentorprofile"
+            app:destination="@id/mentorprofile" />
+        <action
+            android:id="@+id/nav_to_userprofile"
+            app:destination="@id/userprofile" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedmentor"
+        android:name="com.example.hackathon_x.Main.Mentorship.Fragments.SavedMentors"
+        android:label="SavedMentor"
+        tools:layout="@layout/fragment_saved_mentors">
+        <action
+            android:id="@+id/nav_to_mentorship"
+            app:destination="@id/mentorship" />
+        <action
+            android:id="@+id/nav_to_mentorsearch"
+            app:destination="@id/mentorsearch" />
+        <action
+            android:id="@+id/nav_to_mentorprofile"
+            app:destination="@id/mentorprofile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mentorprofile"
+        android:name="com.example.hackathon_x.Main.Mentorship.Fragments.MentorProfile"
+        android:label="Mentor Profile"
+        tools:layout="@layout/fragment_mentor_profile">
+        <action
+            android:id="@+id/nav_to_mentorsearch"
+            app:destination="@id/mentorsearch" />
+        <action
+            android:id="@+id/nav_to_chatlist"
+            app:destination="@id/chatlist" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/userprofile"
+        android:name="com.example.hackathon_x.Main.Mentorship.Fragments.UserProfile"
+        android:label="User Profile"
+        tools:layout="@layout/fragment_user_profile">
+        <action
+            android:id="@+id/nav_to_mentorsearch"
+            app:destination="@id/mentorsearch" />
+        <action
+            android:id="@+id/nav_to_chatlist"
+            app:destination="@id/chatlist" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.hackathon_x.Main.Profile.Profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/nav_to_job"
+            app:destination="@id/job" />
+        <action
+            android:id="@+id/nav_to_upskills"
+            app:destination="@id/upskills" />
+        <action
+            android:id="@+id/nav_to_mentorship"
+            app:destination="@id/mentorship" />
+        <action
+            android:id="@+id/nav_to_home"
+            app:destination="@id/home" />
+        <!--fragments-->
+        <action
+            android:id="@+id/nav_to_setting"
+            app:destination="@id/setting" />
+        <action
+            android:id="@+id/nav_to_notification"
+            app:destination="@id/notification" />
+    </fragment>
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.hackathon_x.Main.Profile.Fragments.Setting.Setting"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting">
+        <action
+            android:id="@+id/nav_to_profile"
+            app:destination="@id/profile" />
+        <!--fragments-->
+        <action
+            android:id="@+id/nav_to_editprofile"
+            app:destination="@id/editprofile" />
+        <action
+            android:id="@+id/nav_to_appinfo"
+            app:destination="@id/appinfo" />
+        <action
+            android:id="@+id/nav_to_support"
+            app:destination="@id/support" />
+        <action
+            android:id="@+id/nav_to_changepassword"
+            app:destination="@id/changepassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/editprofile"
+        android:name="com.example.hackathon_x.Main.Profile.Fragments.Setting.EditProfile.EditProfile"
+        android:label="EditProfile"
+        tools:layout="@layout/fragment_edit_profile">
+        <action
+            android:id="@+id/nav_to_setting"
+            app:destination="@id/setting" />
+    </fragment>
+    <fragment
+        android:id="@+id/appinfo"
+        android:name="com.example.hackathon_x.Main.Profile.Fragments.Setting.AppInformation.AppInformation"
+        android:label="AppInfo"
+        tools:layout="@layout/fragment_app_information">
+        <action
+            android:id="@+id/nav_to_setting"
+            app:destination="@id/setting" />
+    </fragment>
+    <fragment
+        android:id="@+id/support"
+        android:name="com.example.hackathon_x.Main.Profile.Fragments.Setting.Support.Support"
+        android:label="Support"
+        tools:layout="@layout/fragment_support">
+        <action
+            android:id="@+id/nav_to_setting"
+            app:destination="@id/setting" />
+    </fragment>
+    <fragment
+        android:id="@+id/changepassword"
+        android:name="com.example.hackathon_x.Main.Profile.Fragments.Setting.ChangePassword.ChangePassword"
+        android:label="ChangePassword"
+        tools:layout="@layout/fragment_change_password">
+        <action
+            android:id="@+id/nav_to_setting"
+            app:destination="@id/setting" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/chatlist"
+        android:name="com.example.hackathon_x.Main.Messaging.ChatList"
+        android:label="Chat List"
+        tools:layout="@layout/fragment_chat_list">
+        <action
+            android:id="@+id/nav_to_chat"
+            app:destination="@id/chat" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.example.hackathon_x.Main.Messaging.Fragments.Chat"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat">
+        <action
+            android:id="@+id/nav_to_chatlist"
+            app:destination="@id/chatlist" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.example.hackathon_x.Main.Home.Fragments.Notification"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification">
+        <action
+            android:id="@+id/nav_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/nav_to_mentorship"
+            app:destination="@id/mentorship" />
+        <action
+            android:id="@+id/nav_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
 </navigation>
