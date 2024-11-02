@@ -1,5 +1,7 @@
 # Hackhaton-X
 
+JobSwipe aims to bridge the gap between young job seekers and the evolving demands of the labour market by providing a platform for accessing job opportunities, personalised skills training, mentorship, and networking. The app will particularly focus on youth in underserved areas and those facing skill mismatches to foster economic growth and promote decent work in Malaysia. 
+
 ## Table of Contents
 - [Features](#features)
 - [Screenshots](#screenshots)
