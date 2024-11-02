@@ -13,13 +13,15 @@
 
 ## Features
 
-- **Feature 1**:
-- **Feature 2**:
-- **Feature 3**:
-- **Feature 4**:
-- **Feature 5**:
-- **Feature 6**:
-
+- **Job Search by Criteria**: Easily filter and search jobs by location, industry, salary range, and experience level
+- **Swipe to Apply or Save:**: Swipe right to apply to jobs instantly or swipe left to save jobs for later review
+- **Real-Time Updates**: Receive notifications about new job postings and application updates via Firebase Cloud Messaging
+- **User and Company Role**: Different views and functionalities for job-seekers and recruiters for tailored experiences.
+- **In-App Messaging**: Connect with companies directly through in-app chat with options to attach files.
+- **Location-Based Services**:Integrated Google Maps for viewing job locations and enabling location-based job search.
+- **Mentorship and Apprentice**: Find your mentor from your industry to upgrade you skills or contact us to become a mentor.
+- **Host and Join Webinar**:Find the upcoming webinar and saved it in the schedule to further improve your skills.
+- **Connect**:Grow your networking by connecting with people from your industry or even with other mentors.
 
 
 ## Screenshots
@@ -70,13 +72,27 @@ To download the app, please fill out the following form:
 
 ## Usage
 
-### Role 1:
--
--
+### User Role (Job Seeker):
+- **Search & Apply:** Search for job listings and apply directly from the app.
+- **Save Jobs:** Bookmark jobs to review or apply to later.
+- **View Application Status:** Track the status of job applications (Applied, Ongoing, or Rejected).
+- **Networking:** Connect with other peoples from diverse industry either a fellow job seeker or a mentor.
+- **Chat with Connections:** Communicate with your connections.
+- **Find Mentorship:** Find mentors to upgrade your skills by booking a session with them.
+- **Join Webinar:** Join Webinar to upgrade your skills and understanding of the industry.
+  
+### Company Role (Employer):
+- **Post Jobs:** Add job listings with relevant details like title, description, salary, and required skills.
+- **Review Applicants:** View applications and update statuses for job applications.
+- **Chat with Candidates:** Communicate directly with job seekers.
 
-### Role 2:
--
--
+### Mentor Role (Mentor):
+- **Find Apprentices:** Find apprentices to further establish yourself in your industry, and grow your credibility.
+- **Chat with Connections:** Communicate with your connections.
+- **Search & Apply:** Search for job listings and apply directly from the app.
+- **Save Jobs:** Bookmark jobs to review or apply to later.
+- **Host Webinar:** Host your own webinar and promote it to your fellow connections and to the public.
+
 
 ## Contributing
 Contributions are welcome! Please follow the steps below:
